@@ -1,0 +1,37 @@
+queue using linked list
+Insertion:
+1.Start
+2.Allocate a space for new node ptr
+3.set ptr->data=val
+4.if front=Null
+  set front=rear=ptr
+  set front->next=rear->next=NULL
+5.else
+  set rear->next=ptr
+  set rear=ptr
+  set rear->next=ptr
+  end if
+6.End
+
+
+Deletion:
+1.Start
+2.if front=NULL
+  print Underflow
+  end if
+3.set ptr=front
+4.set front=front->next
+5.free ptr
+6.End
+
+Display:
+1.Start
+2.if ptr=NULL
+  print underflow
+3.else
+  while ptr!=null 
+      print ptr->data
+      set ptr=ptr->next
+      end while
+  end if-else
+4.End
