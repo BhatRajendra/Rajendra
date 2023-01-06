@@ -30,7 +30,7 @@ Display:
   print underflow
 3.else
   while ptr!=null 
-      print ptr->data
+      print data in ptr->data
       set ptr=ptr->next
       end while
   end if-else
